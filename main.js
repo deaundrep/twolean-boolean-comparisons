@@ -1,13 +1,63 @@
 /********************
  * YOUR CODE BELOW! *
  ********************/
+function moreThan5(num){
+  return num > 5;
+}
 
+function topScore(num1, num2){
+  return num1 > num2;
+}
 
+function isInDanger(num){
+  return 60 <= num && num <= 71;
+}
 
+function isCoasting(num){
+  return 72 <= num && num <= 83;
+}
 
+function isSucceeding(num){
+  return 84 <= num && num <= 92;
+}
 
+function isFailing(num){
+  return num < 60;
+}
+
+function isAcing(num){
+  return num > 92;
+}
+
+function isStudent(str){
+  return str === 'student';
+}
+
+function isTeacher(str){
+  return str === 'teacher';
+}
+
+function isAdmin(str){
+  return str === 'admin';
+}
+
+function isElementary(str){
+  return str === 'elementary';
+}
+
+function areDifferentPeople(str1, str2){
+  return str1 !== str2;
+}
+
+function isMiddleSchoolTeacher(str, num){
+  return str === 'teacher' && num >= 6 && num <= 8;
+}
+
+function notAnElementarySchoolAdministrator(str1, str2){
+  return str1 !== 'elementary' || str2 !== 'admin';
+}
 /********************************************************************************************
- * CODE BELOW IS FOR EXPORTING THE VARIABLES AND FUNCTIONS YOU WROTE ABOVE TO MAIN.TEST.JS. *
+ * CODE BELOW IS FOR EXPORTING THE VARIABLES AND F UNCTIONS YOU WROTE ABOVE TO MAIN.TEST.JS. *
  *                              THIS IS FOR INTERNAL USE ONLY                               *
  *                          DON'T ADD TO OR CHANGE ANYTHING BELOW!                          *
  ********************************************************************************************/
@@ -57,8 +107,8 @@ if (typeof isElementary === 'undefined') {
   isElementary = undefined;
 }
 
-if (typeof differentPeople === 'undefined') {
-  differentPeople = undefined;
+if (typeof areDifferentPeople === 'undefined') {
+  areDifferentPeople = undefined;
 }
 
 if (typeof notAnElementarySchoolAdministrator === 'undefined') {
@@ -82,7 +132,7 @@ module.exports = {
   isTeacher,
   isAdmin,
   isElementary,
-  differentPeople,
+  areDifferentPeople,
   notAnElementarySchoolAdministrator,
   isMiddleSchoolTeacher,
 }
